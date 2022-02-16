@@ -1,0 +1,14 @@
+<h1>User info</h1>
+  <%= image_tag user.get_profile_image %>
+
+  <p>Name
+  <%= user.name %>
+  </p>
+  <br >
+  <p>Introduction
+  <%= user.introduction %>
+  </p>
+  <br >
+  <%= link_to edit_user_path(user.id), method: :get do %>
+      <i class="fas fa-user-cog"></i>
+  <% end %>
